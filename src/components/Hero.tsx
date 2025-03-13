@@ -36,7 +36,7 @@ export const Hero = ({ onScrollToApartments }: HeroProps) => {
           <div className="flex flex-col justify-center gap-4 sm:flex-row">
             <Button 
               size="lg" 
-              className="bg-white text-gray-900 hover:bg-white/90"
+              className="bg-white text-black hover:bg-transparent hover:text-white transition-colors"
               onClick={onScrollToApartments}
             >
               View Apartments
@@ -44,7 +44,7 @@ export const Hero = ({ onScrollToApartments }: HeroProps) => {
             <Button 
               variant="outline" 
               size="lg" 
-              className="border-white text-white hover:bg-white/10"
+              className="bg-white text-black hover:bg-transparent hover:text-white border-white transition-colors"
               onClick={() => window.open('https://airbnb.com', '_blank')}
             >
               Book on Airbnb
