@@ -15,22 +15,22 @@ export const Hero = ({ onScrollToApartments }: HeroProps) => {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ 
-          backgroundImage: `url('https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=2070&q=80')`,
+          backgroundImage: `url('/lovable-uploads/858a0427-a0ea-409f-a5ef-777675a5dced.png')`,
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-transparent"></div>
       </div>
       
       {/* Content Container */}
       <div className="container relative z-10 mx-auto flex h-full max-w-7xl flex-col items-center justify-center px-4 text-center">
         <AnimatedSection className="max-w-3xl space-y-6">
           <h1 className="text-balance text-3xl font-bold tracking-tight text-white sm:text-4xl md:text-5xl lg:text-6xl">
-            Luxury Living in the Heart of the City
+            Coastal Paradise Awaits
           </h1>
           
           <p className="mx-auto max-w-2xl text-balance text-lg text-white/90 sm:text-xl">
-            Experience comfort and elegance in our thoughtfully designed apartments,
-            perfect for your next getaway or extended stay.
+            Experience the perfect blend of luxury and nature in our waterfront villas,
+            with crystal clear waters and stunning views just steps from your door.
           </p>
           
           <div className="flex flex-col justify-center gap-4 sm:flex-row">
