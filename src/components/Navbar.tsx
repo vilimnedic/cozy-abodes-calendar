@@ -61,11 +61,11 @@ export const Navbar = ({ onScrollToCalendar }: NavbarProps) => {
         </nav>
         
         <div className="hidden md:flex md:items-center md:space-x-4">
-          <Button variant="outline" size="sm" onClick={onScrollToCalendar} className="gap-1.5">
+          <Button variant="outline" size="sm" onClick={onScrollToCalendar} className="bg-white text-black hover:bg-transparent hover:text-white border-white transition-colors">
             <Calendar className="h-4 w-4" />
             <span>Availability</span>
           </Button>
-          
+              
           <Button size="sm" onClick={() => window.open('https://airbnb.com', '_blank')}>
             Book Now
           </Button>
