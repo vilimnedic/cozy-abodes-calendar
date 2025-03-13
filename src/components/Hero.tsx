@@ -35,6 +35,7 @@ export const Hero = ({ onScrollToApartments }: HeroProps) => {
           
           <div className="flex flex-col justify-center gap-4 sm:flex-row">
             <Button 
+              variant="outline"
               size="lg" 
               className="bg-white text-black hover:bg-transparent hover:text-white border-white transition-colors"
               onClick={onScrollToApartments}
