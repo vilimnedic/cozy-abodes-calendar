@@ -15,7 +15,7 @@ export const Hero = ({ onScrollToApartments }: HeroProps) => {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ /* https://raw.githubusercontent.com/vilimnedic/cozy-abodes-calendar/refs/heads/main/public/DJI_0429.jpg?token=GHSAT0AAAAAAC6JZ3IEP2O6BKCXTK7HF27CZ6WQBSA */
-          backgroundImage: `url('https://raw.githubusercontent.com/vilimnedic/cozy-abodes-calendar/refs/heads/main/public/DJI_0429.jpg?token=GHSAT0AAAAAAC6JZ3IEP2O6BKCXTK7HF27CZ6WQBSA?auto=format&fit=crop&w=2070&q=80')`,
+          backgroundImage: `url('https://images.pexels.com/photos/31120801/pexels-photo-31120801/free-photo-of-scenic-beach-landscape-with-rocky-island.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1?token=GHSAT0AAAAAAC6JZ3IEP2O6BKCXTK7HF27CZ6WQBSA?auto=format&fit=crop&w=2070&q=80')`,
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-transparent"></div>
