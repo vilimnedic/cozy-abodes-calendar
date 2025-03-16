@@ -11,11 +11,11 @@ interface HeroProps {
 export const Hero = ({ onScrollToApartments }: HeroProps) => {
   return (
     <div className="relative h-screen w-full overflow-hidden">
-      {/* Hero Background with Overlay */}
+      {/* Hero Background with Overlay -- ?auto=format&fit=crop&w=2070&q=80*/}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ /* https://raw.githubusercontent.com/vilimnedic/cozy-abodes-calendar/refs/heads/main/public/DJI_0429.jpg?token=GHSAT0AAAAAAC6JZ3IEP2O6BKCXTK7HF27CZ6WQBSA */
-          backgroundImage: `url('/DJI_0429.jpg?auto=format&fit=crop&w=2070&q=80')`,
+          backgroundImage: `url('/DJI_0429.jpg')`,
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-transparent"></div>
