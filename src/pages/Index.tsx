@@ -1,4 +1,3 @@
-
 import React, { useRef, useEffect } from 'react';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
@@ -8,8 +7,8 @@ import Footer from '@/components/Footer';
 import AnimatedSection from '@/components/AnimatedSection';
 import { Wifi, Tv, Utensils, Car, Lock, Wind } from 'lucide-react';
 
-// Apartment data
-const apartments = [
+// Apartment data - exported for use in other components
+export const apartments = [
   {
     id: 1,
     name: 'Luxury Urban Suite',

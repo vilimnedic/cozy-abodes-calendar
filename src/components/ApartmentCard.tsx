@@ -5,6 +5,7 @@ import { Bed, Bath, Users, Wifi, Tv, Calendar } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import ImageGallery from './ImageGallery';
 import AnimatedSection from './AnimatedSection';
+import { Link } from 'react-router-dom';
 
 interface Amenity {
   icon: React.ReactNode;
@@ -52,14 +53,18 @@ export const ApartmentCard = ({
       className={cn('group overflow-hidden rounded-xl bg-white transition-all', className)}
       delay={delay}
     >
-      <div className="h-72 sm:h-80 md:h-96 lg:h-80 xl:h-96">
-        <ImageGallery images={images} className="h-full w-full" />
-      </div>
+      <Link to={`/apartment/${id}`} className="block">
+        <div className="h-72 sm:h-80 md:h-96 lg:h-80 xl:h-96">
+          <ImageGallery images={images} className="h-full w-full" />
+        </div>
+      </Link>
       
       <div className="p-6">
         <div className="mb-4 flex flex-wrap items-start justify-between gap-2">
           <div>
-            <h3 className="text-xl font-bold">{name}</h3>
+            <Link to={`/apartment/${id}`} className="hover:underline">
+              <h3 className="text-xl font-bold">{name}</h3>
+            </Link>
             <div className="mt-1 flex items-center text-sm text-muted-foreground">
               <Bed className="mr-1 h-4 w-4" />
               <span>{bedrooms} bedroom{bedrooms !== 1 ? 's' : ''}</span>
@@ -107,12 +112,11 @@ export const ApartmentCard = ({
             <Calendar className="h-4 w-4" />
             <span>Check Availability</span>
           </Button>
-          <Button 
-            className="flex-1 gap-1.5"
-            onClick={() => window.open('https://airbnb.com', '_blank')}
-          >
-            Book Now
-          </Button>
+          <Link to={`/apartment/${id}`} className="flex-1">
+            <Button className="w-full gap-1.5">
+              View Details
+            </Button>
+          </Link>
         </div>
       </div>
     </AnimatedSection>
