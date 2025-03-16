@@ -14,8 +14,8 @@ export const Hero = ({ onScrollToApartments }: HeroProps) => {
       {/* Hero Background with Overlay */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ /* https://github.com/vilimnedic/cozy-abodes-calendar/blob/main/public/DJI_0429.jpg */
-          backgroundImage: `url('https://github.com/vilimnedic/cozy-abodes-calendar/blob/main/public/DJI_0429.jpg?auto=format&fit=crop&w=2070&q=80')`,
+        style={{
+          backgroundImage: `url('https://raw.githubusercontent.com/vilimnedic/cozy-abodes-calendar/main/public/DJI_0429.jpg')`,
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-transparent"></div>
